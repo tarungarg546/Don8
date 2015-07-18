@@ -1,0 +1,78 @@
+<script >
+  $(document).ready(function(){
+    $('select').material_select();
+    $('.radio').each(function(){
+      $(this).on('click',function(){
+        var select=$(this).data('target');
+        $('.'+select).css({'display':'block'});
+        var notThis=$('.radio').not(this);
+        var hmm=$(notThis).data('target');
+        $('.'+hmm).css({'display':'none'});
+      });
+    });
+  });
+</script>
+<div class="row">
+    <form class="col s12" ng-submit="save()" method="get">
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="mdi-action-redeem prefix"></i>
+          <input id="pname"  type="text" class="validate" ng-model="pname">
+          <label for="pname">project name</label>
+        </div>
+
+        <div class="input-field col s6">
+          <i class="mdi-communication-email prefix"></i>
+          <input id="email" type="email" class="validate" ng-model="email">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="mdi-editor-mode-edit prefix"></i>
+          <textarea id="details" class="materialize-textarea" ng-model="details"></textarea>
+          <label for="details">Details</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="mdi-communication-location-on prefix"></i>
+          <textarea id="address" class="materialize-textarea" ng-model="address"></textarea>
+          <label for="address">Address</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Your Purpose:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input name="group1" ng-model="purpose" type="radio" value="cause" id="cause"  class="radio" data-target="sel1"/>
+          <label for="cause">Cause</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input name="group1" ng-model="purpose" type="radio" value="creativity" id="creativity" class="radio" data-target="sel2"/>
+          <label for="creativity">Creativity</label>
+        </div>
+        <div class="input-field col s6  sel1" style="display:none;">
+          <select name="select" ng-model="select">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="disasterRelief">Disaster Relief</option>
+            <option value="personalLoan">Personal Loan</option>
+            <option value="charity">Charity</option>
+            <option value="educationFund">Education Fund</option>
+          </select>
+        <label>Select Sub Purpose</label>
+      </div>
+      <div class="input-field col s6 sel2 " style="display:none;">
+          <select name="select" ng-model="select">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="personalProjects">Personal Project</option>
+            <option value="educationCourses">Education Courses</option>
+            <option value="sculptor">Sculptor</option>
+            <option value="writer">Writer</option>
+          </select>
+        <label>Select Sub Purpose</label>
+      </div>
+      <div class="row">
+            <input class="btn waves-effect waves-light" type="submit" name="action" value="Add It!">
+          <i class="mdi-content-send right"></i>
+        </input>
+      </div>
+      </div>
+    </form>
+  </div>
+   

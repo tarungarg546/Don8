@@ -1,0 +1,21 @@
+<div  >
+  <h1 class="center-align">Your Project History</h1>
+</div>
+<table class="striped hoverable">
+        <thead>
+          <tr>
+              <th data-field="id">Ur Current Project Id</th>
+              <th data-field="name">Date of Posting</th>
+              <th data-field="price">Number Of Donations</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="scope in details">
+
+          <tr ng-repeat="pay in scope.asBeneficiar.projectDetail">
+            <td>{{pay.id}}</td>
+            <td>{{scope.asBeneficiar.date}}</td>
+            <td>{{pay.noPerson}}</td>
+          </tr>
+          
+        </tbody>
+      </table>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<title>AngelHack Test</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/ng-script.js"></script>
+</head>
+<body ng-app="angel">
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+	<nav>
+    <div class="nav-wrapper">
+    
+      <a href="#/latest" class="brand-logo">Logo</a>
+		<div class="input-field test" style="left:8%; position:absolute; width:50%">
+	          <input id="search" type="search" placeholder="Search By name" required>
+	          <label for="search"><i class="mdi-action-search"></i></label>
+	          <i class="mdi-navigation-close"></i>
+        	</div>
+      <ul class="right hide-on-med-and-down">
+
+        <li class="dummy"><a href="#/addNew">Add New</a></li>
+        <li class="dummy active"><a href="#/latest">Latest</a></li>
+        <li class="dummy"><a href="#/mostVouched">Most Vouched</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Profile<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div ng-view class="row"></div>
+</body>
+</html>

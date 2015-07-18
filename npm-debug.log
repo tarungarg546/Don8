@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'ngRock' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json angelhack@ No description
+6 warn package.json angelhack@ No repository field.
+7 warn package.json angelhack@ No README data
+8 warn package.json http@0.0.0 http is also the name of a node core module.
+9 warn package.json http@0.0.0 No description
+10 warn package.json http@0.0.0 No repository field.
+11 warn package.json http@0.0.0 No README data
+12 warn package.json https@1.0.0 https is also the name of a node core module.
+13 warn package.json https@1.0.0 No repository field.
+14 warn package.json https@1.0.0 No README data
+15 warn package.json path@0.11.14 path is also the name of a node core module.
+16 warn package.json querystring@0.2.0 querystring is also the name of a node core module.
+17 verbose readDependencies using package.json deps
+18 verbose cache add [ 'ngRock', null ]
+19 verbose cache add name=undefined spec="ngRock" args=["ngRock",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'ngRock',
+20 verbose parsed url   path: 'ngRock',
+20 verbose parsed url   href: 'ngRock' }
+21 silly lockFile dd43c757-ngRock ngRock
+22 verbose lock ngRock C:\Users\Tarun_19\AppData\Roaming\npm-cache\dd43c757-ngRock.lock
+23 silly lockFile dd43c757-ngRock ngRock
+24 silly lockFile dd43c757-ngRock ngRock
+25 verbose addNamed [ 'ngRock', '' ]
+26 verbose addNamed [ null, '*' ]
+27 silly lockFile 56a3605a-ngRock ngRock@
+28 verbose lock ngRock@ C:\Users\Tarun_19\AppData\Roaming\npm-cache\56a3605a-ngRock.lock
+29 silly addNameRange { name: 'ngRock', range: '*', hasData: false }
+30 verbose request where is /ngRock
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 786ec221e5a87735
+33 verbose url raw /ngRock
+34 verbose url resolving [ 'https://registry.npmjs.org/', './ngRock' ]
+35 verbose url resolved https://registry.npmjs.org/ngRock
+36 verbose request where is https://registry.npmjs.org/ngRock
+37 info trying registry request attempt 1 at 11:14:36
+38 http GET https://registry.npmjs.org/ngRock
+39 http 404 https://registry.npmjs.org/ngRock
+40 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=0',
+40 verbose headers   'content-length': '51',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Sun, 21 Jun 2015 05:44:37 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   age: '0',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1434865477.665007,VS0,VE218' }
+41 silly registry.get cb [ 404,
+41 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+41 silly registry.get     'content-type': 'application/json',
+41 silly registry.get     'cache-control': 'max-age=0',
+41 silly registry.get     'content-length': '51',
+41 silly registry.get     'accept-ranges': 'bytes',
+41 silly registry.get     date: 'Sun, 21 Jun 2015 05:44:37 GMT',
+41 silly registry.get     via: '1.1 varnish',
+41 silly registry.get     age: '0',
+41 silly registry.get     connection: 'keep-alive',
+41 silly registry.get     'x-served-by': 'cache-sin6920-SIN',
+41 silly registry.get     'x-cache': 'MISS',
+41 silly registry.get     'x-cache-hits': '0',
+41 silly registry.get     'x-timer': 'S1434865477.665007,VS0,VE218' } ]
+42 silly lockFile 56a3605a-ngRock ngRock@
+43 silly lockFile 56a3605a-ngRock ngRock@
+44 error 404 404 Not Found: ngRock
+44 error 404
+44 error 404 'ngRock' is not in the npm registry.
+44 error 404 You should bug the author to publish it
+44 error 404 It was specified as a dependency of 'angelhack'
+44 error 404
+44 error 404 Note that you can also install from a
+44 error 404 tarball, folder, or http url, or git url.
+45 error System Windows_NT 6.1.7601
+46 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "ngRock"
+47 error cwd c:\angelhack
+48 error node -v v0.10.31
+49 error npm -v 1.4.23
+50 error code E404
+51 verbose exit [ 1, true ]

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+	<title>AngelHack Test</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+	<script src="js/ng-script.js"></script>
+  <script src="js/listener.js"></script>
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.css' type='text/css' media='all' />
+ <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.js'></script>
+</head>
+<body ng-app="angel">
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#/contributor">Contributor</a></li>
+  <li class="divider"></li>
+  <li><a href="#/beneficiary">Beneficiary</a></li>
+</ul>
+	<nav class="blue lighten-2">
+    <div class="nav-wrapper">
+    
+      <a href="#/latest" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		<div class="input-field test" style="left:8%; position:absolute; width:50%">
+	          <input id="search" type="search" placeholder="Search By name" required>
+	          <label for="search"><i class="mdi-action-search"></i></label>
+	          <i class="mdi-navigation-close"></i>
+        	</div>
+      <ul class="right hide-on-med-and-down">
+
+        <li class="dummy"><a href="#/addNew">Add New</a></li>
+        <li class=" dummy"><a href="#/latest">Latest</a></li>
+        <li class="dummy"><a href="#/mostVouched">Most Vouched</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Profile<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      </ul>
+      <!--<ul class="side-nav" id="mobile-demo">
+
+        <li class="dummy"><a href="#/addNew">Add New</a></li>
+        <li class=" dummy"><a href="#/latest">Latest</a></li>
+        <li class="dummy"><a href="#/mostVouched">Most Vouched</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Profile<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      </ul>-->
+    </div>
+  </nav>
+  <div ng-view class="row"></div>
+</body>
+</html>

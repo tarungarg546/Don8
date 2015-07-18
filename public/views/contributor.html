@@ -1,0 +1,20 @@
+<div  >
+  <h1 class="center-align">Your Payment History</h1>
+</div>
+<table class="striped hoverable">
+        <thead>
+          <tr>
+              <th data-field="id">Project Id</th>
+              <th data-field="name">Date of giving</th>
+              <th data-field="price">Money Distributed</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="scope in details">
+          <tr ng-repeat="pay in scope.asContributor.payment_info">
+            <td>{{pay.id}}</td>
+            <td>{{pay.date}}</td>
+            <td>{{val}}</td>
+          </tr>
+          
+        </tbody>
+      </table>

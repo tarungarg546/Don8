@@ -1,0 +1,50 @@
+<style type="text/css">
+	.section
+	{
+		  /* border-bottom: 1px solid darkcyan; */
+  width: 107.5%;
+  position: relative;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  left: 0%;
+	}
+</style>
+<ul class="collection">
+	<li class="collection-item avatar" style="height:100%" ng-repeat="scope in projects|orderBy:'-time'">
+		<i class="mdi-action-assessment circle indigo"></i>
+      		<span class="title"><a href="#/project/{{scope._id}}">{{scope.projectName}}</a></span>
+      			<p>{{scope.details}}</br>
+         			Score(Out of 100):{{scope.sentimentalValue}}
+      			</p>	
+      			<button  ng-click='donate(scope._id)' data-target="modal1" class="btn modal-trigger" style="position:relative; top:-50px; float:right;background-color:#64b5f6 ;">Donate
+      			<i class="mdi-content-send right"></i>
+        		</button>
+	  			<div id="modal1" class="modal modal-fixed-footer">
+				    <div class="modal-content">
+				      <h4>Modal Header</h4>
+				      <p>A bunch of text</p>
+				    </div>
+	    			<div class="modal-footer">
+	      				<a href="#!" class="modal-action modal-close waves-effect waves-indigo btn-flat">Agree</a>
+	    			</div>
+	  			</div>
+			<div class="section">
+				<a href="https://www.facebook.com/sharer/sharer.php?u=localhost" target="_blank"><img src="img/facebook.jpg" width="25" height="25" title="Share on fb"></img></a>
+				<a href="https://twitter.com/home?status=Hello%20angelhacks" target="_blank"><img src="img/twitter.png" width="25" height="25" title="Share on twitter"></img></a>
+				<a href="https://plus.google.com/share?url=localhost" target="_blank"><img src="img/google.png" width="25" height="25" title="Share on G+"></img></a>
+				<a href="https://www.linkedin.com/shareArticle?mini=true&url=localhost&title=I%20have%20donated!&summary=Summary%20here!&source=" target="_blank"><img src="img/linkeding.png" width="25" height="25" title="Share on linkedIN"></img></a>
+				<button ng-click='like(scope._id)' data-target="modal1" class="btn modal-trigger" style="position:relative; float:right;left:11.2%;width:152px;background-color:#64b5f6 ;">Like This{{likes}}
+        		</button>
+			</div>
+	</li>
+</ul>
+<script type="text/javascript">
+	$(function(){
+		$('.modal-trigger').leanModal();
+		var d=new Date();
+		if(d.getDate()=='1')
+		{
+			prompt("It's 'Pehli Tarikh'.Please Recharge your wallet", "50$");
+		}
+	})
+</script>
