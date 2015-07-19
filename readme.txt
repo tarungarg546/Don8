@@ -6,7 +6,6 @@ Using HP IdolOnDemand Api and MEAN stack
 
 
 ```
-#!python
 
 ##How To run##
 1. Clone this in your local machine
@@ -27,4 +26,3 @@ Using HP IdolOnDemand Api and MEAN stack
 6.Go to localhost:3000 to see it in action
 ##Dont Forget to obtain your own HP API key and mongoDB connect url.
 ```
-
