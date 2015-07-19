@@ -1,5 +1,5 @@
 var mongoose=require('mongoose');
-mongoose.connect('mongodb://angelhack:angelhack@ds033740.mongolab.com:33740/angelhack');
+mongoose.connect('mongodb://mongoURL');
 var db=mongoose.connection;
 var dbproj=mongoose.connection;
 var comm=mongoose.connection;
