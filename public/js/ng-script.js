@@ -48,27 +48,7 @@ myapp.controller("addNewCtrl",function($scope,$http,$location){
 			$scope.poster=result.data;
 			//var project=result.data;
 			$location.path('/');
-			/*var Data = {
-				document:[]
-			};
-			Data.document.push({
-					"title":project.projectName,
-					"content":project.details,
-					"address":project.address,
-					"main":project.genre[0].main,
-					"sub":project.genre[0].sub,
-					"household":project.genre[0].household
-			});
-			//console.log(Data);
-			var temp=JSON.stringify(Data);
-			//console.log(temp);
-			$http.get("https://api.idolondemand.com/1/api/sync/addtotextindex/v1?apikey=2e18280a-7b6d-492e-b157-262819851445&index=angelhack&json="+temp)
-			.then(function(result){
-				$scope.dummy=result.data;
-				$location.path('/');
-			},function(err){
-				console.log(err);
-			});*/
+			
 		},function(err){
 			console.log(err);
 		});
@@ -131,7 +111,7 @@ myapp.controller("projectCtrl",function($scope,$http,$routeParams,$route){
 	}
 	$scope.leave=function(){
 		var data=$scope.comment;
-		$http.get('https://api.idolondemand.com/1/api/sync/analyzesentiment/v1?apikey=2e18280a-7b6d-492e-b157-262819851445&text='+data)
+		$http.get('https://api.idolondemand.com/1/api/sync/analyzesentiment/v1?apikey=****Your Own Key****&text='+data)
 		.then(function(result){
 			console.log('here');
 			$scope.score=result.data.aggregate.score;
