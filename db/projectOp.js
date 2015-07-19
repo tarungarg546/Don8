@@ -1,5 +1,5 @@
 var mongoose=require('mongoose');
-mongoose.connect('mongodb://angelhack:angelhack@ds033740.mongolab.com:33740/angelhack');
+mongoose.connect('mongodb://ownURL');
 var dbproj=mongoose.connection;
 var https=require('https');
 var querystring=require('querystring');
