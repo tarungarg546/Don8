@@ -1,5 +1,6 @@
 var mongoose=require('mongoose');
-mongoose.connect('mongodb://mongoURL');
+var keys=require('./../keys/keys.json');
+mongoose.connect(keys.mongoose.url);
 var db=mongoose.connection;
 var dbproj=mongoose.connection;
 var comm=mongoose.connection;
